@@ -42,4 +42,4 @@ end
 my_hash = Hash[noms.zip(pri)]
 return my_hash[devise_rentree]
 end
-capture
+capture(devise_rentree)
