@@ -14,7 +14,7 @@ require 'open-uri'
 #capturemail
 
 
-def captureurlmail(ville_entree) #capture url des villes du 95
+def captureurlmail #capture url des villes du 95
 url2 = "http://www.annuaire-des-mairies.com/val-d-oise.html"
 doc2 = Nokogiri::HTML(open(url2))
 adresse2 = doc2.css('.lientxt')
