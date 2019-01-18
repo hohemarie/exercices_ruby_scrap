@@ -45,10 +45,11 @@ noms.each do |adresse|
 	
 end
 
-#Hash[villes.zip(emails)].each do |ville,email|
-	#puts ville+" => "+email
-my_hash=Hash[villes.zip(emails)]
-return my_hash(ville_entree)
+Hash[villes.zip(emails)].each do |ville,email|
+	puts ville+" => "+email
+#my_hash=Hash[villes.zip(emails)]
+#return my_hash(ville_entree)
+end
 end
 #puts noms
 captureurlmail
