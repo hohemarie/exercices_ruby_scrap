@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'open-uri'
 
 # definition d'une fonction 
-def capture(devise_rentree)
+def capture
 	puts "veuillez patienter..."
 	url = "https://coinmarketcap.com/all/views/all/"
 	prix = [] # on fait un tableau des prix
@@ -39,7 +39,7 @@ end
 Hash[noms.zip(pri)].each do |key,value|#j'associe les differents champs du tableau
 	puts key+" => "+value
 end 
-my_hash = Hash[noms.zip(pri)]
-return my_hash[devise_rentree]
+#my_hash = Hash[noms.zip(pri)]
+#return my_hash[devise_rentree]
 end
-capture(devise_rentree)
+capture
