@@ -1,4 +1,4 @@
-require_relative '../lib/hello'
+require_relative '../lib/01_trader'
 
 describe "the capture function" do 
 it "should return the corresponding stock exchange according to the currency exchange with two digits after the comma" do
